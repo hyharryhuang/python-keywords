@@ -3,7 +3,10 @@ Outputs keywords from a string (without stopwords/URLs/mentions/RTs).
 
 ##Usage
 
-If you're getting rid of stopwords, install nltk: `pip install -r /path/to/requirements.txt`.
+1. Import the project. 
+2. If you're getting rid of stopwords, install nltk: `pip install -r /path/to/requirements.txt`.
+
+##Example
 
 ```python
 import python_keywords as pk
