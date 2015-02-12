@@ -10,7 +10,10 @@ def removeStopWordsFromString(string):
     return ' '.join([word for word in string.split() if word.lower() not in cachedStopWords])
 
 def removeLinksFromString(string):
-	return re.sub(r"(?:\@|https?\://)\S+", "", string).strip()
+	return re.sub(r"(?:https?\://)\S+", "", string).strip()
+
+def removeMentionsFromString(string):
+	return re.sub(r"(?:\@)\S+", "", string).strip()
 
 def removeHashtagsFromString(string):
 	return re.sub("#", "", string).strip()
